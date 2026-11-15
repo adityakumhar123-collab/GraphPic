@@ -1,0 +1,19 @@
+# ── Core Python + ML ──────────────────────────────────
+insightface==0.7.3
+numpy>=1.24.0,<2.0.0
+opencv-python-headless>=4.8.0
+
+# ── ONNX Runtime (choose one) ─────────────────────────
+# CPU (default — works everywhere):
+onnxruntime>=1.17.0
+# GPU (comment out the CPU line above and uncomment this if you have CUDA):
+# onnxruntime-gpu>=1.17.0
+
+# ── Storage & Queue ───────────────────────────────────
+boto3>=1.34.0
+pymongo>=4.6.0
+qdrant-client>=1.7.0
+bullmq>=0.3.3
+
+# ── Utilities ─────────────────────────────────────────
+python-dotenv>=1.0.0

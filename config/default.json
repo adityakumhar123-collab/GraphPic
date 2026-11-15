@@ -1,0 +1,22 @@
+{
+  "port": 3000,
+  "queues": {
+    "imageProcessing": "image-processing",
+    "faceQuery": "face-query"
+  },
+  "ttl": {
+    "queryJobMinutes": 10,
+    "s3LifecycleMinutes": 15,
+    "presignedUrlSeconds": 600
+  },
+  "worker": {
+    "similarityThreshold": 0.4,
+    "uploadConcurrency": 5,
+    "pollIntervalMs": 2000
+  },
+  "qdrant": {
+    "collection": "face_embeddings",
+    "vectorSize": 512,
+    "distance": "Cosine"
+  }
+}

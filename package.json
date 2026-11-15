@@ -1,0 +1,19 @@
+{
+  "name": "graphpic",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev:api": "pnpm --filter @graphpic/api dev",
+    "dev:web": "pnpm --filter @graphpic/web dev",
+    "dev:poller": "pnpm --filter @graphpic/poller dev",
+    "dev": "concurrently \"pnpm dev:api\" \"pnpm dev:web\" \"pnpm dev:poller\"",
+    "build:web": "pnpm --filter @graphpic/web build",
+    "lint": "eslint \"apps/**/*.{js,jsx}\" \"packages/**/*.js\"",
+    "format": "prettier --write \"apps/**/*.{js,jsx}\" \"packages/**/*.js\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "eslint": "^8.57.0",
+    "prettier": "^3.3.3"
+  }
+}

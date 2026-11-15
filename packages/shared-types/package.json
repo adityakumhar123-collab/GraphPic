@@ -1,0 +1,6 @@
+{
+  "name": "@graphpic/types",
+  "version": "1.0.0",
+  "description": "Shared JSDoc typedefs for Graphpic",
+  "main": "index.js"
+}
